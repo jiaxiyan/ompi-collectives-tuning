@@ -1,7 +1,7 @@
 collectives : allreduce
 omb_collective_directory : /fsx/osu-micro-benchmarks/install/libexec/osu-micro-benchmarks/mpi/collective
 imb_binary : /path/to/install/IMB-MPI1
-number_of_ranks : 2 3 4 5 6 7 8 16 32
+number_of_ranks : 2 3 4 5 6 7 8 10 15 16 20 30 32
 max_num_node : 32
 number_of_cores_per_node : 1
 number_of_runs_per_test : 3
