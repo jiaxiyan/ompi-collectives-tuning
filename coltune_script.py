@@ -89,7 +89,7 @@ def main():
                         prg_name = imb_bin+" -npmin %d %s " % (num_rank, collective)
                     else:
                         prg_name = omb_path+"/osu_"+collective
-                    cmd = "mpirun --np %d " % (num_rank)
+                    cmd = "/fsx/ompi/install/bin/mpirun --np %d " % (num_rank)
                     cmd += "%s " % (mpirun_options)
                     cmd += "--mca coll_tuned_use_dynamic_rules 1 --mca coll_tuned_"+collective+"_algorithm "+str(alg)
                     cmd += " " + prg_name
