@@ -93,6 +93,7 @@ def main():
                     cmd += "%s " % (mpirun_options)
                     cmd += "--mca coll_tuned_use_dynamic_rules 1 --mca coll_tuned_"+collective+"_algorithm "+str(alg)
                     cmd += " " + prg_name
+                    cmd += " -x " + str((num_rank + 1) // 2)
                     cmd += " >& " + dir_path+"/output/"+collective + "/" + str(alg) + "_" + str(num_rank) + "ranks" + "_run" + str(run_id) + ".out"
                     print(cmd, file=f)
                 print("", file=f)
